@@ -1,0 +1,17 @@
+spring:
+  rabbitmq:
+    host: 172.16.13.3
+    username: admin
+    password: admin
+    firstQueue: "first_Queue"
+    secondQueue: "second_Queue"
+    thirdlyQueue: "thirdly_Queue"
+    fourthlyQueue: "fourthly_Queue"
+    directExchange: "direct_Exchange"
+    topicExchange: "topic_Exchange"
+    fanoutExchange: "fanout_Exchange"
+    listener:
+      direct:
+        acknowledge-mode: manual
+      simple:
+        acknowledge-mode: manual
